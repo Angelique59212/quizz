@@ -1,5 +1,8 @@
-window.onload = function () {
-    $.get("data.json", function (data) {
-        console.log(data);
+$.ajax( {
+    url: "/json/question.json",
+    method: "GET",
+    dataType: "json"
+})
+    .done(function (response) {
+        let result = $("button");
     })
-}
