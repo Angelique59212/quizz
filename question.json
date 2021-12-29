@@ -1,0 +1,101 @@
+[
+  {
+    "question": "Quel est le premier long métrage d'animation de Walt Disney?",
+    "reponses": [
+      "Fantasia",
+      "Bambi",
+      "Blanche Neige"
+    ],
+    "bonne": "Blanche Neige"
+  },
+
+  {
+    "question": "Parmi ces trois films, lequel n'est pas un Disney?",
+    "reponses": [
+      "Pinocchio",
+      "Cendrillon",
+      "Moi, moche et méchant"
+    ],
+    "bonne": "Moi, moche et méchant"
+  },
+
+  {
+    "question": "Rox et Rocky met en scène",
+    "reponses": [
+      "Un chien et un renard",
+      "Un chat et un lion",
+      "Un oiseau et une souris"
+    ],
+    "bonne": "Un chien et un renard"
+  },
+
+  {
+    "question": "Comment s'appelle le héros du Roi Lion?",
+    "reponses": [
+      "Simba",
+      "Baloo",
+      "Kuzco"
+    ],
+    "bonne": "Simba"
+  },
+
+  {
+    "question": "Dans quel ville se situe la Princesse et la grenouille?",
+    "reponses": [
+      "Londres",
+      "Bali",
+      "La Nouvelle Orléans"
+    ],
+    "bonne": "La Nouvelle Orléans"
+  },
+
+  {
+    "question": "Comment s'appelle le petit cochon de Vaïana?",
+    "reponses": [
+      "Maui",
+      "Heihei",
+      "Pua"
+    ],
+    "bonne": "Pua"
+  },
+
+  {
+    "question": "Comment s'appelle la méchante de la Petite Sirène?",
+    "reponses": [
+      "Maléfique",
+      "Mère Gothel",
+      "Ursula"
+    ],
+    "bonne": "Ursula"
+  },
+
+  {
+    "question": "En quel année est sortie Raiponce?",
+    "reponses": [
+      "2020",
+      "2010",
+      "2015"
+    ],
+    "bonne": "2010"
+  },
+
+  {
+    "question": "Quel disney s'inspire d'un roman de Victor Hugo?",
+    "reponses": [
+      "Le Bossu de Notre Dame",
+      "Frère des ours",
+      "Bernard et Bianca"
+    ],
+    "bonne": "Le Bossu de Notre Dame"
+  },
+
+  {
+    "question": "Dans la Belle et le Clochard quel est la race du chien de Lady?",
+    "reponses": [
+      "Springer Argles",
+      "Cavalier King Charles",
+      "Cocker Spaniel Anglais"
+    ],
+    "bonne": "Cocker Spaniel Anglais"
+  }
+]
