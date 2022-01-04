@@ -47,6 +47,16 @@ button {
 #game {
     display: none;
     flex-direction: column;
+    align-items: center;
+}
+
+#home {
+    text-align: center;
+}
+
+#playBtn {
+    width: 8vw;
+    height: 4vh;
 }
 
 main div {
@@ -56,9 +66,40 @@ main div {
 
 #score {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    font-weight: bold;
+    font-style: oblique;
+    color: #FFFFFF;
+    font-size: 3rem;
 }
 
 p {
-    font-size: 2.4rem;
-    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+}
+
+.answer {
+    font-weight: bold;
+}
+
+#playAgain {
+    width: 8vw;
+    height: 4vh;
+}
+
+@media screen and (max-width: 887px) {
+    #playAgain {
+        width: 22vw;
+    }
+    #game div {
+        text-align: center;
+    }
 }

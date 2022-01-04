@@ -43,22 +43,22 @@ answers.click(function () {
         .done(function (response) {
             if (userAnswer === response[questionCounter].right) {
                 score++;
-                console.log("bon : " + score);
             }
             else {
                 console.log("mauvais : " + score);
                 wrongAnswers.push([questionCounter, userAnswer]);
-                console.log(wrongAnswers);
             }
             writeQuestion(questionCounter +1);
             questionCounter++;
             if (!response[questionCounter]) {
                 gameScreen.css("display", "none");
                 scoreScreen.css("display", "flex");
-                resultP.text('votre score est de ' + score + " / " + response.length);
+                resultP.text('Votre score est de ' + score + " / " + response.length);
 
                 for (let wrongAnswer of wrongAnswers){
-                    details.html(details.html() + "- A la question numéro " + (wrongAnswer[0]+1).toString() + " vous avez répondu " + wrongAnswer[1] + ". La bonne réponse etait : " + response[wrongAnswer[0]].right + "<br>");
+                    details.html(details.html() + "- A la question numéro " + (wrongAnswer[0]+1).toString() +
+                        " vous avez répondu " + wrongAnswer[1] + "<br>" + " La bonne réponse etait : " +
+                        response[wrongAnswer[0]].right + "<br>");
                 }
             }
         })
