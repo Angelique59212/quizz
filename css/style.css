@@ -38,16 +38,27 @@ button {
     width: 25rem;
     height: 15rem;
     margin: 3rem;
-    border: 1px solid black;
+    border: 1px solid #e3f0f5;
     background-color: transparent;
+    color: white;
+    font-size: 2rem;
 }
 
-main {
-    display: flex;
+#game {
+    display: none;
     flex-direction: column;
 }
 
 main div {
     display: flex;
     justify-content: center;
+}
+
+#score {
+    display: none;
+}
+
+p {
+    font-size: 2.4rem;
+    color: #FFFFFF;
 }

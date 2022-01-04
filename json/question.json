@@ -1,101 +1,101 @@
 [
   {
-    "question1": "Quel est le premier long métrage d'animation de Walt Disney?",
-    "reponses": [
+    "question": "Quel est le premier long métrage d'animation de Walt Disney?",
+    "answer": [
       "Fantasia",
       "Bambi",
       "Blanche Neige"
     ],
-    "bonne": "Blanche Neige"
+    "right": "Blanche Neige"
   },
 
   {
-    "question2": "Parmi ces trois films, lequel n'est pas un Disney?",
-    "reponses": [
+    "question": "Parmi ces trois films, lequel n'est pas un Disney?",
+    "answer": [
       "Pinocchio",
       "Cendrillon",
       "Moi, moche et méchant"
     ],
-    "bonne": "Moi, moche et méchant"
+    "right": "Moi, moche et méchant"
   },
 
   {
-    "question3": "Rox et Rocky met en scène",
-    "reponses": [
+    "question": "Rox et Rocky met en scène",
+    "answer": [
       "Un chien et un renard",
       "Un chat et un lion",
       "Un oiseau et une souris"
     ],
-    "bonne": "Un chien et un renard"
+    "right": "Un chien et un renard"
   },
 
   {
-    "question4": "Comment s'appelle le héros du Roi Lion?",
-    "reponses": [
+    "question": "Comment s'appelle le héros du Roi Lion?",
+    "answer": [
       "Simba",
       "Baloo",
       "Kuzco"
     ],
-    "bonne": "Simba"
+    "right": "Simba"
   },
 
   {
-    "question5": "Dans quel ville se situe la Princesse et la grenouille?",
-    "reponses": [
+    "question": "Dans quel ville se situe la Princesse et la grenouille?",
+    "answer": [
       "Londres",
       "Bali",
       "La Nouvelle Orléans"
     ],
-    "bonne": "La Nouvelle Orléans"
+    "right": "La Nouvelle Orléans"
   },
 
   {
-    "question6": "Comment s'appelle le petit cochon de Vaïana?",
-    "reponses": [
+    "question": "Comment s'appelle le petit cochon de Vaïana?",
+    "answer": [
       "Maui",
       "Heihei",
       "Pua"
     ],
-    "bonne": "Pua"
+    "right": "Pua"
   },
 
   {
-    "question7": "Comment s'appelle la méchante de la Petite Sirène?",
-    "reponses": [
+    "question": "Comment s'appelle la méchante de la Petite Sirène?",
+    "answer": [
       "Maléfique",
       "Mère Gothel",
       "Ursula"
     ],
-    "bonne": "Ursula"
+    "right": "Ursula"
   },
 
   {
-    "question8": "En quel année est sortie Raiponce?",
-    "reponses": [
+    "question": "En quel année est sortie Raiponce?",
+    "answer": [
       "2020",
       "2010",
       "2015"
     ],
-    "bonne": "2010"
+    "right": "2010"
   },
 
   {
-    "question9": "Quel disney s'inspire d'un roman de Victor Hugo?",
-    "reponses": [
+    "question": "Quel disney s'inspire d'un roman de Victor Hugo?",
+    "answer": [
       "Le Bossu de Notre Dame",
       "Frère des ours",
       "Bernard et Bianca"
     ],
-    "bonne": "Le Bossu de Notre Dame"
+    "right": "Le Bossu de Notre Dame"
   },
 
   {
-    "question10": "Dans la Belle et le Clochard quel est la race du chien de Lady?",
-    "reponses": [
+    "question": "Dans la Belle et le Clochard quel est la race du chien de Lady?",
+    "answer": [
       "Springer Argles",
       "Cavalier King Charles",
       "Cocker Spaniel Anglais"
     ],
-    "bonne": "Cocker Spaniel Anglais"
+    "right": "Cocker Spaniel Anglais"
   }
 ]
