@@ -8,14 +8,11 @@ const resultP = $("#result");
 const playAgainBtn = $("#playAgain");
 const details = $("#details");
 
-// $.get(url, function (question) {
-//     question.first().html(JSON.stringify(question));
-//     answer.last().html(answer);
-// })
 let questionCounter = 0;
 let score = 0;
 let wrongAnswers = [];
 
+//write the question
 function writeQuestion(questionNumber) {
     $.ajax( {
         url: "/json/question.json",
@@ -30,38 +27,38 @@ function writeQuestion(questionNumber) {
         })
 }
 
-
 answers.click(function () {
 
-    const userAnswer = this.innerText;
+const userAnswer = this.innerText;
 
-    $.ajax( {
-        url: "/json/question.json",
-        method: "GET",
-        dataType: "json"
+//user response retrieval
+$.ajax( {
+    url: "/json/question.json",
+    method: "GET",
+    dataType: "json"
+})
+    .done(function (response) {
+        if (userAnswer === response[questionCounter].right) {
+            score++;
+        }
+        else {
+            wrongAnswers.push([questionCounter, userAnswer]);
+        }
+        writeQuestion(questionCounter +1);
+        questionCounter++;
+        if (!response[questionCounter]) { // if it's a wrong answer
+            //score and wrong answer screen
+            gameScreen.css("display", "none");
+            scoreScreen.css("display", "flex");
+            resultP.text('Votre score est de ' + score + " / " + response.length);
+
+            for (let wrongAnswer of wrongAnswers){
+                details.html(details.html() + "- A la question numéro " + (wrongAnswer[0]+1).toString() +
+                    " vous avez répondu " + wrongAnswer[1] + "<br>" + " La bonne réponse etait : " +
+                    response[wrongAnswer[0]].right + "<br>");
+            }
+        }
     })
-        .done(function (response) {
-            if (userAnswer === response[questionCounter].right) {
-                score++;
-            }
-            else {
-                console.log("mauvais : " + score);
-                wrongAnswers.push([questionCounter, userAnswer]);
-            }
-            writeQuestion(questionCounter +1);
-            questionCounter++;
-            if (!response[questionCounter]) {
-                gameScreen.css("display", "none");
-                scoreScreen.css("display", "flex");
-                resultP.text('Votre score est de ' + score + " / " + response.length);
-
-                for (let wrongAnswer of wrongAnswers){
-                    details.html(details.html() + "- A la question numéro " + (wrongAnswer[0]+1).toString() +
-                        " vous avez répondu " + wrongAnswer[1] + "<br>" + " La bonne réponse etait : " +
-                        response[wrongAnswer[0]].right + "<br>");
-                }
-            }
-        })
 })
 
 playBtn.click(() => {
