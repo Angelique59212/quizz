@@ -15,7 +15,7 @@ let wrongAnswers = [];
 //write the question
 function writeQuestion(questionNumber) {
     $.ajax( {
-        url: "/json/question.json",
+        url: "json/question.json",
         method: "GET",
         dataType: "json"
     })
@@ -33,7 +33,7 @@ const userAnswer = this.innerText;
 
 //user response retrieval
 $.ajax( {
-    url: "/json/question.json",
+    url: "json/question.json",
     method: "GET",
     dataType: "json"
 })
